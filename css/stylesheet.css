@@ -15,7 +15,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    z-index: 11;
 }
 
 nav {
@@ -30,7 +31,9 @@ nav li {
     padding-right: 50px;
     text-transform: uppercase;
     color: rgb(112, 112, 112);
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
+    font-weight: bold;
 }
 
 .logo {
@@ -85,12 +88,14 @@ h1 {
 
 .products-showcase {
     display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .box {
-    display: flex;
+    position: relative;
+    width: 50%;
+    display: inline-flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
@@ -98,10 +103,12 @@ h1 {
 
 .img-box {
     width: 300px;
+    margin: 0 auto;
 }
 
 .btn-black {
     position: absolute;
+    margin-top: 390px;
     width: 130px;
     padding: 15px;
     background-color: #1e1e1e;
@@ -109,4 +116,29 @@ h1 {
     border: none;
     outline: none;
     left: 50%;
+    transform: translateX(-50%);
+}
+
+.box-nav {
+    position: absolute;
+}
+
+.box-nav li {
+    list-style: none;
+    display: inline;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 4;
+}
+
+.gallery .content {
+    padding: 15px;
+    text-align: center;
+}
+
+.product-shot {
+    width: 150px;
 }
