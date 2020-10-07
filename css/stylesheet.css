@@ -7,6 +7,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 header {
@@ -222,4 +223,20 @@ span {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
 }
