@@ -120,18 +120,17 @@ h1 {
 
 .products-showcase {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
     align-items: center;
     align-content: center;
-    width: 90vw;
-    height: 800px;
-    margin: 0 auto;
+    width: 100vw;
+    margin: 80px auto;
+    box-sizing: border-box;
 }
 
 .box {
     position: relative;
-    width: 50%;
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
@@ -157,17 +156,15 @@ h1 {
     cursor: pointer;
 }
 
-.gallery {
-    display: flex;
-    flex-flow: row wrap;
-    flex-grow: 0;
-    margin-top: 20px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 300px);
+    margin: 100px 0;
 }
 
-.gallery .content {
-    padding: 15px 15px;
-    margin: 0 auto;
-    text-align: center;
+.grid-item {
+    padding: 0 25px;
 }
 
 .product-shot {
@@ -223,20 +220,4 @@ span {
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: transparent;
-    padding: 0px;
-}
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    padding: 25px;
-    font-size: 20px;
-    text-align: center;
-    flex-grow: 1;
 }
