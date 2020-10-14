@@ -25,6 +25,7 @@ nav {
     height: 70px;
     align-items: center;
     margin-left: 4rem;
+    width: 100vw;
 }
 
 nav li {
@@ -78,16 +79,14 @@ h1 {
 
 .home-title1 {
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 5%;
     animation: toRight 1s linear;
     padding: 0 25px;
 }
 
 .home-title2 {
     text-align: center;
-    margin-top: 50vh;
-    margin-left: 20%;
-    padding: 0 25px;
+    margin-top: 25%;
     animation: toLeft 1s linear;
 }
 
@@ -115,170 +114,79 @@ h1 {
 
 .home-btn {
     position: absolute;
-    padding: 10px 35px;
+    padding: 0 55px;
     border-radius: 5px;
     background-color: #000;
     color: #fff;
     cursor: pointer;
     font-size: 20px;
     outline: none;
+    height: 50px;
     border: none;
-    margin-left: 59vw;
-    top: 108%;
     background: linear-gradient(to right, #e47f45, #e75b09);
+    margin-top: 32%;
+    margin-left: 50%;
 }
 
 
 /*Products Showcase*/
 
-.title-box {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-}
-
-.products-showcase {
+.container {
     display: flex;
-    justify-content: space-evenly;
     flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    width: 100vw;
-    margin: 60px auto;
-    box-sizing: border-box;
+    justify-content: space-around;
+    background-image: url(/Images/background-3.jpg);
+    background-size: cover;
+    padding: 35px 25px;
 }
 
 .box {
     position: relative;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
-}
-
-.img-box {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.btn-black {
-    position: absolute;
-    margin-top: 300px;
-    width: 130px;
-    padding: 15px;
-    background-color: #1e1e1e;
-    color: white;
-    border: none;
-    outline: none;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-areas: "big product1 product2 product3 product4" "big product5 product6 product7 product8";
-    margin: 60px 0;
-    align-items: start;
-}
-
-.grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 35px;
 }
 
 .product-shot {
-    width: 150px;
+    width: 400px;
     cursor: pointer;
 }
 
-.big {
-    grid-area: big;
-    align-content: center;
-}
-
-.product1 {
-    grid-area: product1;
-}
-
-.product2 {
-    grid-area: product2;
-}
-
-.product3 {
-    grid-area: product3;
-}
-
-.product4 {
-    grid-area: product4;
-}
-
-.product5 {
-    grid-area: product5;
-}
-
-.product6 {
-    grid-area: product6;
-}
-
-.product7 {
-    grid-area: product7;
-}
-
-.product8 {
-    grid-area: product8;
-}
-
-h3 {
-    padding: 15px 0;
-    text-align: center;
+.product-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    padding: 15px 45px;
+    color: #fff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: calc(12px + 1vw);
 }
 
 
-/*thin hero */
+/* NEW ARRIVALS HERO */
 
 .hero-break {
-    display: block;
-    width: 100vw;
-}
-
-.thin-hero {
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
-}
-
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-}
-
-span {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    color: #000;
-    width: 100%;
-    z-index: 11;
+    position: relative;
     text-align: center;
-    margin: -200px 190px;
-    text-transform: uppercase;
+    color: white;
 }
 
-.hero-btn {
-    position: absolute;
-    width: 130px;
-    padding: 15px;
-    background-color: #1e1e1e;
-    color: white;
-    border: none;
-    outline: none;
-    margin: -130px 190px;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
+.hero-break img {
+    width: 100vw;
 }
+
+.hero2-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: calc(35px + 1vw);
+    font-weight: 600;
+    color: #000;
+}
+
+
+/*MEDIA QUERIES*/
+
+320px — 480px
